@@ -90,14 +90,14 @@
   .sec03 .row { position: relative; height: 4rem; overflow: hidden; }
   .sec03 .row::before, .sec03 .row::after { 
     position: absolute; content: ""; width: 10rem; height: 4rem; z-index: 2;
-  }
-  .sec03 .row::before { background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,1) ); }
-  .sec03 .row::after { right:0; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,1) ); }
+      }
+    .sec03 .row::before { background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,1) ); }
+    .sec03 .row::after { right:0; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,1) ); }
 
 
 
   .sec03 .arrow { display: none; }
-  .sec03 .row_inner {
+  .sec03 .row_inner { 
     position: absolute; top:0;
     width: 230rem;
     height: 100%;
@@ -180,10 +180,10 @@
 
   .sec07 .email { padding:0 12rem; }
 
-  .addressWrap { width: 40%; }
-  .company { width: 21%;}
-  .destinations { width: 21%; }
-  .sns { width: 18%; }
+  .addressWrap { width:47%;}
+  .company { width:15%; }
+  .destinations { width:20%; }
+  .sns { width:18%; }
 
-  .address.txt2 { font-size: 1.4rem; }
+  .address.txt2 { font-size: 1.4rem;}
 }

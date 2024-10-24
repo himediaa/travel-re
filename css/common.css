@@ -37,10 +37,27 @@ strong { color: var(--colorM); }
 
 
 
-
 .boxes { display: grid; gap: 2rem; }
 .box { border: 1px solid var(--gray4); border-radius:1.6rem; padding: 2.2rem; }
 
 
 section { padding:3rem 0;  margin-bottom:7rem; }
 .tablet, .pc { display:none; }
+
+
+@keyframes toUp {
+  0% { transform: translateY(100px);  }
+  100% { transform: translateY(0); opacity:1; }
+}
+
+@keyframes toRight {
+  0% { transform: translateX(-100px);  }
+  100% { transform: translateY(0); opacity:1; }
+}
+
+@keyframes toDown {
+  0% { transform: translateY(-100px);  }
+  100% { transform: translateY(0); opacity:1; }
+}
+
+

@@ -1,22 +1,29 @@
-document.querySelectorAll('.count').forEach(countElement => {
-  const updateCount = () => {
-      const target = +countElement.getAttribute('data-count');
-      let current = 0;
-      const increment = target / 200; // Adjust the speed of the counting
 
-      const interval = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-              current = target;
-              clearInterval(interval);
-              countElement.classList.add('completed'); // Add completed class for styling
-          }
-          countElement.textContent = Math.floor(current);
-      }, 10); // Adjust for smoother animation
-  };
 
-  updateCount();
-});
+
+function countFunc(){
+  document.querySelectorAll('.count').forEach(countElement => {
+    const updateCount = () => {
+        const target = +countElement.getAttribute('data-count');
+        let current = 0;
+        const increment = target / 200; // Adjust the speed of the counting
+  
+        const interval = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(interval);
+                countElement.classList.add('completed'); // Add completed class for styling
+            }
+            countElement.textContent = Math.floor(current);
+        }, 10); // Adjust for smoother animation
+    };
+  
+    updateCount();
+  });
+}
+
+
 
 /* 
   챗 GTP를 이용한 카운터 애니메이션
